@@ -12,7 +12,7 @@ public class Lift {
     // numberOfFloorSwitch
 
 
-    // Behaviour4
+    // Behaviour
 
     // LiftGoingUp
     // LiftGoingDown
