@@ -19,7 +19,7 @@ public class Student {
 
     public String name;
     String phoneNumber;
-    String dob;
+    public String dob;
     String sClass;
     String rollNumber;
     float height;
@@ -41,19 +41,36 @@ public class Student {
     public void present(){
         System.out.println("Student is present");
     }
+
     // studying
     public void studying(){
         System.out.println("Student is studying");
     }
+
     // playing
     public void playing(){
         System.out.println("Student is playing");
     }
 
     // working
+    public void working(){
+        System.out.println("Student is working");
+    }
+
     // teaching
+    public void teaching(){
+        System.out.println("Student is teaching");
+    }
+
     // discussing
+    public void discussing(){
+        System.out.println("Student is discussing");
+    }
+
     // eating
+    public void eating(){
+        System.out.println("Student is eating");
+    }
 
 
 
