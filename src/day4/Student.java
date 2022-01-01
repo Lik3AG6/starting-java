@@ -9,10 +9,7 @@ public class Student {
     private String rollNumber;
     private String socialSecurityNumber;
 
-    // present
-    public void present(){
-        System.out.println("Student is present");
-    }
+
 
     public String getName() {
         return name;
@@ -56,6 +53,11 @@ public class Student {
 
     public void setSocialSecurityNumber(String socialSecurityNumber) {
         this.socialSecurityNumber = socialSecurityNumber;
+    }
+
+    // present
+    public void present(){
+        System.out.println("Student is present");
     }
 
     // studying

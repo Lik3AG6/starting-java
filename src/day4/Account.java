@@ -7,19 +7,18 @@ public class Account {
     // balance
 
     private final float INTEREST_RATE = 0.05f;
-
     private String accountNumber;
-
-    public float getINTEREST_RATE() {
-        return INTEREST_RATE;
-    }
-
     private String accountHolderName;
     private double accountBalance;
+
+
 
     // addBalance
     // transferBalance
 
+    public float getINTEREST_RATE() {
+        return INTEREST_RATE;
+    }
     public String getAccountNumber() {
         return accountNumber;
     }
