@@ -21,24 +21,20 @@ public class BankEncapsulation {
         account2.setAccountBalance(1000);
 
         // Interest calculation
-        account1.addInterest(account2);
+        account1.addInterest(account1);
 
-       /* System.out.println("****************** Before Transfer *****************");
+        System.out.println("****************** Before Transfer *****************");
         System.out.println("Account 2 : " + account2.getAccountBalance());
         System.out.println("Account 1 : " + account1.getAccountBalance());
 
-        //Transferring Balance (from A2 to A1 amount 500)
-        transferBalance(account2, account1);
+        // Transferring balance
+        account2.transferBalance(account1, account2, double amountToBeTransferred: 1000);
 
-        System.out.println("****************** After Transfer *****************");
+        System.out.println("****************** Before Transfer *****************");
         System.out.println("Account 2 : " + account2.getAccountBalance());
         System.out.println("Account 1 : " + account1.getAccountBalance());
     }
 
-    public static void transferBalance(Account fromAccount ,Account toAccount ) {
-        fromAccount.setAccountBalance(fromAccount.getAccountBalance() - 500);
-        toAccount.setAccountBalance(toAccount.getAccountBalance() + 500);
 
-    }*/
-    }
 }
+

@@ -13,9 +13,6 @@ public class Account {
 
 
 
-    // addBalance
-    // transferBalance
-
     public float getINTEREST_RATE() {
         return INTEREST_RATE;
     }
@@ -42,6 +39,18 @@ public class Account {
     public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
     }
+
+    // deposit
+    public void deposit(Account account, double amount){
+        this.accountBalance += amount;
+    }
+
+    // transferBalance
+    public void transferBalance(Account fromAccount ,Account toAccount, double amountToBeTransferred){
+        fromAccount.setAccountBalance(fromAccount.getAccountBalance() - amountToBeTransferred);
+        toAccount.setAccountBalance(toAccount.getAccountBalance() + amountToBeTransferred);
+    }
+
     // addInterest
     public void addInterest(Account account){
         double interest = (account.getAccountBalance() * 1 * INTEREST_RATE);
@@ -49,6 +58,8 @@ public class Account {
         System.out.println("Interest Amount: " + interest);
         account.setAccountBalance(account.getAccountBalance() + interest);
         System.out.println("Amount with interest: " + account.getAccountBalance());
+
+
     }
 
 }
