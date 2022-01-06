@@ -33,7 +33,10 @@ public class BankEncapsulation {
         System.out.println("****************** Before Transfer *****************");
         System.out.println("Account 2 : " + account2.getAccountBalance());
         System.out.println("Account 1 : " + account1.getAccountBalance());
+
     }
+
+
 
 
 }
