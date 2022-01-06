@@ -59,7 +59,6 @@ public class Account {
         account.setAccountBalance(account.getAccountBalance() + interest);
         System.out.println("Amount with interest: " + account.getAccountBalance());
 
-
     }
 
 }
