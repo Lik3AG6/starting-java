@@ -15,11 +15,11 @@ public class PolymorphismPractice {
         person.setAge(23);
         ((Student)person).setStudentClass(12); // explicit type casting.
 
+
         person = new Teacher();
         person.setName("Hari");
         person.setAge(30);
         ((Teacher)person).setSubject("Mac 281 teacher"); // explicit type casting
-
 
 
         // List of Person Class
